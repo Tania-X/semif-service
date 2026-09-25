@@ -3,10 +3,30 @@
 把「语义判定」暴露成一个**窄而可审计**的 HTTP 服务：给一份 state 和若干冻结的判定点，返回每个选项的概率分布。
 
 这是 [SemIf](https://github.com/TheoLeeCJ/SemIf) 的直接 logits 读出法的**服务化封装**，
-用作 [semif-gate](../semif-gate)（Java 决策网关）的推理后端。
+用作 [semif-gate](https://github.com/Tania-X/semif-gate)（Java 决策网关）的推理后端。
 
 > 本仓库**不重新实现** SemIf 的语义——它复用 `semif_phase1` 包的 prompt 构造、
 > 答案槽位校验与模型加载，只补上一层 HTTP 契约。
+
+## 验证状态
+
+已在 **RTX 4090 PLUS + Qwen3.5-4B (bf16)** 上与 Java 网关完成端到端联调：
+
+| 项 | 结果 |
+|---|---|
+| prompt 哈希与 SemIf 已发布值 | ✅ 一致（`3cc9e3d1…`） |
+| 输出分布与已发布预测 | ✅ **逐位一致**（Δ ≤ 2e-7） |
+| 冷启动延迟 | p50 **95 ms** / p95 149 ms（含网关与 HTTP 往返） |
+| 缓存命中 | **0.07 ms**（由网关侧缓存提供，服务零调用） |
+
+**联调过程中发现并修掉的静默 bug**（详见网关仓库的
+[`docs/integration-log-silent-bugs.md`](https://github.com/Tania-X/semif-gate/blob/main/docs/integration-log-silent-bugs.md)）：
+
+1. **标签顺序贴错** —— 数值按渲染顺序算、标签按注册表顺序贴，
+   导致 `contradicted` 与 `supported` 的概率互换（Δ=0.108），
+   而 **prompt 哈希校验照样通过**。
+2. **前缀复用给出错误分布** —— Qwen3.5 是混合架构（线性注意力 + 因果卷积），
+   其缓存不能按任意 token 边界切分复用（Δ=0.43）。**故默认禁用**。
 
 ---
 
