@@ -1,0 +1,89 @@
+[
+  {
+    "id": "semif.candidate_selection",
+    "version": 1,
+    "owner": "semif-gate",
+    "family": "candidate_selection",
+    "options": [
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      }
+    ],
+    "option_order": [
+      "B",
+      "A",
+      "insufficient"
+    ],
+    "option_order_coverage": "15/48",
+    "option_order_note": "顺序是语义的一部分：SemIf 按选项在列表中的下标分配答案字母（LETTERS[i]），实测按行内原始顺序渲染可 144/144 命中已发布 prompt 哈希，字典序 0/144。调整顺序必须升版本并重新评测（实测选项反转导致 30.6% 判定翻转）。",
+    "representative_question": "Choose the candidate reporting completed delivery.",
+    "note": "选项描述与顺序逐字取自 authored144.jsonl，未做任何重排"
+  },
+  {
+    "id": "semif.evidence_interpretation",
+    "version": 1,
+    "owner": "semif-gate",
+    "family": "evidence_interpretation",
+    "options": [
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      }
+    ],
+    "option_order": [
+      "contradicted",
+      "insufficient",
+      "supported"
+    ],
+    "option_order_coverage": "13/48",
+    "option_order_note": "顺序是语义的一部分：SemIf 按选项在列表中的下标分配答案字母（LETTERS[i]），实测按行内原始顺序渲染可 144/144 命中已发布 prompt 哈希，字典序 0/144。调整顺序必须升版本并重新评测（实测选项反转导致 30.6% 判定翻转）。",
+    "representative_question": "Assess the claim: the replacement lenses have been fitted.",
+    "note": "选项描述与顺序逐字取自 authored144.jsonl，未做任何重排"
+  },
+  {
+    "id": "semif.rule_application",
+    "version": 1,
+    "owner": "semif-gate",
+    "family": "rule_application",
+    "options": [
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      }
+    ],
+    "option_order": [
+      "prohibited",
+      "permitted",
+      "insufficient"
+    ],
+    "option_order_coverage": "11/48",
+    "option_order_note": "顺序是语义的一部分：SemIf 按选项在列表中的下标分配答案字母（LETTERS[i]），实测按行内原始顺序渲染可 144/144 命中已发布 prompt 哈希，字典序 0/144。调整顺序必须升版本并重新评测（实测选项反转导致 30.6% 判定翻转）。",
+    "representative_question": "Sell copies only with the architect's sales permission. May copies be sold?",
+    "note": "选项描述与顺序逐字取自 authored144.jsonl，未做任何重排"
+  }
+]

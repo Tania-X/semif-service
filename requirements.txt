@@ -1,0 +1,11 @@
+# HTTP 层
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.0
+
+# 推理与 SemIf 语义（semif_phase1 需按 SemIf 官方说明单独安装：
+#   pip install -e 'SemIf[test]'
+# 这里只列出本服务直接 import 的部分）
+torch>=2.10
+transformers>=5.17
+huggingface-hub>=1.31
