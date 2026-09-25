@@ -87,9 +87,20 @@ def load_registry(path: Path) -> Registry:
 
 
 class PointRequest(BaseModel):
-    id: str                      # pointId（不含版本）
+    """一个待判定的判定点。
+
+    字段名与网关侧契约保持一致（`id` / `point_ref` / `prompt_sha256`）。
+    """
     point_ref: str               # pointId@version
     prompt_sha256: str           # 调用方（Java）声明的哈希，必须与渲染结果一致
+    id: str | None = None        # pointId（不含版本）；省略时由 point_ref 推导
+
+    @property
+    def point_id(self) -> str:
+        """判定点 ID：优先用显式传入的，否则从 point_ref 去掉版本后缀。"""
+        if self.id:
+            return self.id
+        return self.point_ref.split("@", 1)[0]
 
 
 class DecideRequest(BaseModel):
@@ -102,6 +113,9 @@ class PointResult(BaseModel):
     point_id: str
     option_ids: list[str]
     probabilities: list[float]
+    # 同一分布的两种视图。对象形式便于网关直接按键取用（避免按下标对齐），
+    # 数组形式保留了顺序信息。两者必须始终一致，由 _to_result 统一构造。
+    distribution: dict[str, float]
     prompt_sha256: str
     input_tokens: int
 
@@ -198,6 +212,19 @@ class DecisionEngine:
         return out
 
     # -- 内部：请求构造与渲染 ------------------------------------------------
+    @staticmethod
+    def _criterion_of(state: dict[str, Any]) -> str:
+        """判据取值：优先 `criterion`（SemIf 形状），回落到 `question`（Java 网关形状）。
+
+        两种形状都合法——判定点的身份是 (判据, 选项集, 选项顺序, model revision)，
+        而判据在网关侧既可能是注册表常量，也可能是逐行 state 字段。
+        """
+        for key in ("criterion", "question"):
+            value = state.get(key)
+            if isinstance(value, str) and value:
+                return value
+        raise ValueError("state 必须提供 criterion 或 question（非空字符串）")
+
     def _resolve_options(self, point: DecisionPoint, state: dict[str, Any]):
         """确定选项的呈现顺序。
 
@@ -222,7 +249,7 @@ class DecisionEngine:
         row = {
             "id": f"{p.point_ref}:{state.get('case_id', 'case')}",
             "state": state.get("evidence"),
-            "question": state.get("criterion"),
+            "question": self._criterion_of(state),
             "options": [{"id": o.id, "description": o.description} for o in options],
         }
         validate_row(row)
@@ -236,10 +263,7 @@ class DecisionEngine:
     # -- 渲染（不推理）------------------------------------------------------
     def render(self, state: dict[str, Any], points: list[PointRequest]) -> list[dict]:
         """只渲染 prompt 并算哈希，让调用方据此冻结契约。"""
-        criterion = state.get("criterion")
         evidence = state.get("evidence")
-        if not isinstance(criterion, str) or not criterion:
-            raise ValueError("state.criterion 必须是非空字符串")
         if evidence is None:
             raise ValueError("state.evidence 不能为空")
 
@@ -249,7 +273,7 @@ class DecisionEngine:
             row = self._build_row(p, point, state)
             prompt = self._render_prompt(row)
             out.append({
-                "point_id": point.id,
+                "point_id": p.point_id,
                 "prompt_sha256": digest(prompt),
                 "input_tokens": len(self.tokenizer.encode(prompt, add_special_tokens=False)),
             })
@@ -259,10 +283,7 @@ class DecisionEngine:
     def decide(self, state: dict[str, Any], points: list[PointRequest]) -> tuple[list[PointResult], dict]:
         import torch
 
-        criterion = state.get("criterion")
         evidence = state.get("evidence")
-        if not isinstance(criterion, str) or not criterion:
-            raise ValueError("state.criterion 必须是非空字符串")
         if evidence is None:
             raise ValueError("state.evidence 不能为空")
 
@@ -323,10 +344,12 @@ class DecisionEngine:
         if len(option_ids) != len(self.slots[p.point_ref]):
             raise ValueError(f"选项数与槽位数不符: {point.ref}")
         slots = self.slots[p.point_ref]
+        probabilities = softmax(vocab[slots].cpu().tolist())
         return PointResult(
-            point_id=point.id,
+            point_id=p.point_id,
             option_ids=option_ids,
-            probabilities=softmax(vocab[slots].cpu().tolist()),
+            probabilities=probabilities,
+            distribution=dict(zip(option_ids, probabilities)),
             prompt_sha256=p.prompt_sha256,
             input_tokens=len(ids),
         )
