@@ -1,67 +1,51 @@
 [
   {
-    "id": "semif.candidate_selection",
+    "id": "semif.bench.720b7b3b1f2e",
     "version": 1,
-    "owner": "semif-gate",
-    "family": "candidate_selection",
+    "owner": "perf-bench",
+    "question": "A resident's pass requires living in the valley and has no workplace restriction. May it be issued?",
     "options": [
       {
-        "id": "B",
-        "description": "Candidate B"
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
       },
       {
-        "id": "A",
-        "description": "Candidate A"
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.40ddfc290197",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "A resident's pass requires living in the valley and has no workplace restriction. May it be issued?",
+    "options": [
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
       },
       {
         "id": "insufficient",
-        "description": "Neither candidate supplies the requested evidence"
+        "description": "The supplied information does not settle whether the rule permits the action"
       }
     ],
-    "option_order": [
-      "B",
-      "A",
-      "insufficient"
-    ],
-    "option_order_coverage": "15/48",
-    "option_order_note": "顺序是语义的一部分：SemIf 按选项在列表中的下标分配答案字母（LETTERS[i]），实测按行内原始顺序渲染可 144/144 命中已发布 prompt 哈希，字典序 0/144。调整顺序必须升版本并重新评测（实测选项反转导致 30.6% 判定翻转）。",
-    "representative_question": "Choose the candidate reporting completed delivery.",
-    "note": "选项描述与顺序逐字取自 authored144.jsonl，未做任何重排"
+    "row_count": 1
   },
   {
-    "id": "semif.evidence_interpretation",
+    "id": "semif.bench.89293586c0ad",
     "version": 1,
-    "owner": "semif-gate",
-    "family": "evidence_interpretation",
-    "options": [
-      {
-        "id": "contradicted",
-        "description": "The evidence establishes the opposite"
-      },
-      {
-        "id": "insufficient",
-        "description": "The evidence does not establish either"
-      },
-      {
-        "id": "supported",
-        "description": "The evidence establishes the claim"
-      }
-    ],
-    "option_order": [
-      "contradicted",
-      "insufficient",
-      "supported"
-    ],
-    "option_order_coverage": "13/48",
-    "option_order_note": "顺序是语义的一部分：SemIf 按选项在列表中的下标分配答案字母（LETTERS[i]），实测按行内原始顺序渲染可 144/144 命中已发布 prompt 哈希，字典序 0/144。调整顺序必须升版本并重新评测（实测选项反转导致 30.6% 判定翻转）。",
-    "representative_question": "Assess the claim: the replacement lenses have been fitted.",
-    "note": "选项描述与顺序逐字取自 authored144.jsonl，未做任何重排"
-  },
-  {
-    "id": "semif.rule_application",
-    "version": 1,
-    "owner": "semif-gate",
-    "family": "rule_application",
+    "owner": "perf-bench",
+    "question": "A resident's pass requires living in the valley and has no workplace restriction. May it be issued?",
     "options": [
       {
         "id": "prohibited",
@@ -76,14 +60,3891 @@
         "description": "The supplied information does not settle whether the rule permits the action"
       }
     ],
-    "option_order": [
-      "prohibited",
-      "permitted",
-      "insufficient"
+    "row_count": 3
+  },
+  {
+    "id": "semif.bench.d7934aa0e7c0",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "A sample may be made when sample production is approved. May the sample be made?",
+    "options": [
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      }
     ],
-    "option_order_coverage": "11/48",
-    "option_order_note": "顺序是语义的一部分：SemIf 按选项在列表中的下标分配答案字母（LETTERS[i]），实测按行内原始顺序渲染可 144/144 命中已发布 prompt 哈希，字典序 0/144。调整顺序必须升版本并重新评测（实测选项反转导致 30.6% 判定翻转）。",
-    "representative_question": "Sell copies only with the architect's sales permission. May copies be sold?",
-    "note": "选项描述与顺序逐字取自 authored144.jsonl，未做任何重排"
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.3623d72ec703",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "A wristband permits entry exactly to the areas it covers. May the visitor enter the rooftop terrace?",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.27b4b107cb55",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "A wristband permits entry exactly to the areas it covers. May the visitor enter the sculpture garden?",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.61bcffd3e8b0",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "A wristband permits entry exactly to the areas it covers. May the visitor enter the sculpture garden?",
+    "options": [
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.9a40c3dc7bdf",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "A wristband permits entry exactly to the areas it covers. May the visitor enter the sculpture garden?",
+    "options": [
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.97fc4f3befd7",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "A wristband permits entry exactly to the areas it covers. May the visitor enter the sculpture garden?",
+    "options": [
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.5fd6be188d32",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Accept defective paint even if opened or mixed with solvent; neither condition overrides the defect exception. May this return be accepted?",
+    "options": [
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.7bbcc052e22c",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Approve final handover exactly when both the translated manual and glossary have been supplied. May final handover be approved?",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.70342a47d5b8",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Approve final handover exactly when both the translated manual and glossary have been supplied. May final handover be approved?",
+    "options": [
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.51165961d4fa",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Approve final handover exactly when both the translated manual and glossary have been supplied. May final handover be approved?",
+    "options": [
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.50304c3301b3",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Approve final handover exactly when both the translated manual and glossary have been supplied. May final handover be approved?",
+    "options": [
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.a7eb62143231",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Approve the translation milestone when the manual has been supplied; the glossary is not required for this milestone. May this milestone be approved?",
+    "options": [
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.08150864235f",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: Lina has authority to approve exhibit labels.",
+    "options": [
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.726ff2492b8d",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: Mo has authority to approve exhibit labels.",
+    "options": [
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.ea5f67826486",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: Mo has authority to approve exhibit labels.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.d3ddd69bd408",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: Mo has authority to approve exhibit labels.",
+    "options": [
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.8fa23083dea3",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: a real egg was discovered.",
+    "options": [
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.6d81fa826e8a",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: permission to scan the notebook is currently valid.",
+    "options": [
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.951e012bed11",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: permission to scan the notebook is currently valid.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.c73733d972cd",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: permission to scan the notebook is currently valid.",
+    "options": [
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.a4cd78423df5",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: permission to scan the notebook is currently valid.",
+    "options": [
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.e8d103381e63",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: replacement lenses were ordered.",
+    "options": [
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.3de99f9d4211",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: terminal Cedar is online.",
+    "options": [
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.454f09c45695",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: terminal Maple is online.",
+    "options": [
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.92f0ae5d1e16",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: terminal Maple is online.",
+    "options": [
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      }
+    ],
+    "row_count": 3
+  },
+  {
+    "id": "semif.bench.204d0b8fb881",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the agreed handover is complete.",
+    "options": [
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.5dffb711a908",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the agreed handover is complete.",
+    "options": [
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.ca1f4eb32373",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the agreed handover is complete.",
+    "options": [
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.25e9c2d43bff",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the corrected date is in July.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.f8cdf3eeb4a0",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the corrected date is in July.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.c8b742f004b9",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the corrected date is in July.",
+    "options": [
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.69cb0125fd6d",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the corrected date is in July.",
+    "options": [
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.e1b55abfa832",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the corrected date is in June.",
+    "options": [
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.72b2ceda7213",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the desk log reports the crate in storage.",
+    "options": [
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.08b25ba7cbc7",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the document contains weighing instructions.",
+    "options": [
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.4fee957f8267",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the egg discovery was fictional.",
+    "options": [
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.14c8d540951c",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the egg discovery was fictional.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.9c19f67afceb",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the egg discovery was fictional.",
+    "options": [
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.1518c92f4a5b",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the egg discovery was fictional.",
+    "options": [
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.ba4770b35822",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the guest disputes the towel statement.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.07c4a44bad80",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the guest endorses the listing's towel statement.",
+    "options": [
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.e901ce129db4",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the guest endorses the listing's towel statement.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.4412ecc61ada",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the guest endorses the listing's towel statement.",
+    "options": [
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      }
+    ],
+    "row_count": 3
+  },
+  {
+    "id": "semif.bench.a5394ad99cff",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the lamp has a fault.",
+    "options": [
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.3f0811d2fc85",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the outside workshop can perform this repair.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.0a4eb9b8152b",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the owner gave permission on Monday.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.8f89b0bf9c2e",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the parcel has been weighed.",
+    "options": [
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.c23f8d56b43c",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the parcel has been weighed.",
+    "options": [
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.db04feeae058",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the parcel has been weighed.",
+    "options": [
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.52738eda1ff6",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the parcel has been weighed.",
+    "options": [
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.6547ec4b66f7",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the replacement lenses have been fitted.",
+    "options": [
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.0b69720aec9d",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the replacement lenses have been fitted.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.f1b1941d1c82",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the replacement lenses have been fitted.",
+    "options": [
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.f77672df20a9",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the routing rule assigns this repair to the outside workshop.",
+    "options": [
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.6062e98054f9",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the routing rule assigns this repair to the outside workshop.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.ca593cdd1707",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the routing rule assigns this repair to the outside workshop.",
+    "options": [
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.d0dd3d306a21",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: the source files were delivered.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.46788f01d9b0",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: this lamp qualifies for return under the stated policy.",
+    "options": [
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      }
+    ],
+    "row_count": 3
+  },
+  {
+    "id": "semif.bench.4031c83ca767",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: this lamp qualifies for return under the stated policy.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.0cf2d1edae13",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: this lamp qualifies for return under the stated policy.",
+    "options": [
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.4cfaef0fb07f",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: under the supplied protocol, the crate is currently in storage.",
+    "options": [
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      }
+    ],
+    "row_count": 3
+  },
+  {
+    "id": "semif.bench.6e4122122306",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: under the supplied protocol, the crate is currently in storage.",
+    "options": [
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.5e7a9ddd02ee",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Assess the claim: under the supplied protocol, the crate is currently in storage.",
+    "options": [
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.c2f7e40152e4",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Book the school only as a fallback when the town hall is unavailable or unsuitable; otherwise book the town hall. May the school be booked under this policy?",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.81983a25b976",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Book the school only as a fallback when the town hall is unavailable or unsuitable; otherwise book the town hall. May the school be booked under this policy?",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.481cf045a902",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Book the school only as a fallback when the town hall is unavailable or unsuitable; otherwise book the town hall. May the school be booked under this policy?",
+    "options": [
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.59e97dac1961",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Change an account field only when the owner authorizes changing that field. May the display name be changed?",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.85005d9d24c2",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Change an account field only when the owner authorizes changing that field. May the recovery email be changed?",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.fc4dfe558fd9",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Change an account field only when the owner authorizes changing that field. May the recovery email be changed?",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.38729f482deb",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Change an account field only when the owner authorizes changing that field. May the recovery email be changed?",
+    "options": [
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.c93e357f2484",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Change an account field only when the owner authorizes changing that field. May the recovery email be changed?",
+    "options": [
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.2ce30888abef",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Choose A whenever A is able; choose B only when A is unable and B is able.",
+    "options": [
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.e3a2b349955b",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Choose A whenever A is able; choose B only when A is unable and B is able.",
+    "options": [
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.587116977a88",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Choose A whenever A is able; choose B only when A is unable and B is able.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.9e63f892bbf9",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Choose A whenever A is able; choose B only when A is unable and B is able.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.e4c3c35259a2",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Choose the candidate asking for complete replacement.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.6491b7fd0a51",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Choose the candidate asking only for information while withholding authorization.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.962a705adf21",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Choose the candidate asking to repair the existing window.",
+    "options": [
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.b262245a7c6b",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Choose the candidate asking to repair the existing window.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      }
+    ],
+    "row_count": 3
+  },
+  {
+    "id": "semif.bench.876872e751e1",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Choose the candidate asking to repair the existing window.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.9aca5ee83929",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Choose the candidate authorizing engraving.",
+    "options": [
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.05317e70825b",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Choose the candidate authorizing engraving.",
+    "options": [
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.ea30dd446c91",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Choose the candidate authorizing engraving.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      }
+    ],
+    "row_count": 3
+  },
+  {
+    "id": "semif.bench.4d5870419d48",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Choose the candidate containing only an unexecuted test procedure.",
+    "options": [
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.649ea2166726",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Choose the candidate offering a future delivery.",
+    "options": [
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.d36b20c4d73e",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Choose the candidate opposing a paywall.",
+    "options": [
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.ce83a493e3ad",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Choose the candidate reporting an awarded grant.",
+    "options": [
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.b3c72570b159",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Choose the candidate reporting an awarded grant.",
+    "options": [
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.f532ba3fde04",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Choose the candidate reporting an awarded grant.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.830bc3f0b451",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Choose the candidate reporting an observed test result.",
+    "options": [
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.ca8689a5b0d6",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Choose the candidate reporting an observed test result.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      }
+    ],
+    "row_count": 3
+  },
+  {
+    "id": "semif.bench.1b3bfba39d24",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Choose the candidate reporting an observed test result.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.8554a1af5df4",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Choose the candidate reporting completed delivery.",
+    "options": [
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      }
+    ],
+    "row_count": 3
+  },
+  {
+    "id": "semif.bench.c87f377e3aa6",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Choose the candidate reporting completed delivery.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.29bf68b86bc7",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Choose the candidate reporting completed delivery.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.9711d4904626",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Choose the candidate reporting receipt with the award still undecided.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.08d803496a88",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Choose the candidate supporting a paywall.",
+    "options": [
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      }
+    ],
+    "row_count": 3
+  },
+  {
+    "id": "semif.bench.1b93485d22d6",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Choose the candidate supporting a paywall.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.846bde8f5d56",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "For this fictional protocol, the first recorded decision is binding and later withdrawals are ignored. May the surveyor enter the attic?",
+    "options": [
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.9e74fc3a1662",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Internal training reproduction is allowed when the architect permits that use. May the plan appear in the training booklet?",
+    "options": [
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.1fe6a85cb2da",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Mass production is allowed only after mass-production approval. May it begin?",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.f6e7095d166e",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Mass production is allowed only after mass-production approval. May it begin?",
+    "options": [
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.800a06da11aa",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Mass production is allowed only after mass-production approval. May it begin?",
+    "options": [
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.16d3df3b7f91",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Normally reject opened paint. Accept it for a manufacturing defect, except that added solvent always makes it ineligible. May this return be accepted?",
+    "options": [
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      }
+    ],
+    "row_count": 4
+  },
+  {
+    "id": "semif.bench.2d4f95f9a921",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Normally reject opened paint. Accept it for a manufacturing defect, except that added solvent always makes it ineligible. May this return be accepted?",
+    "options": [
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.b733be7af684",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Release equipment exactly when the deposit is recorded paid; in conflicts, the signed ledger overrides the desk clerk. May it be released?",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.2430e3efa6b4",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Release equipment exactly when the deposit is recorded paid; in conflicts, the signed ledger overrides the desk clerk. May it be released?",
+    "options": [
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.d3fc8c2ec321",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Release equipment exactly when the deposit is recorded paid; in conflicts, the signed ledger overrides the desk clerk. May it be released?",
+    "options": [
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.5b458d5e8854",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Release equipment exactly when the deposit is recorded paid; under this alternative protocol, the desk clerk overrides the ledger. May it be released?",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.34cbe497cc01",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Select the candidate documenting an authorization that was later withdrawn.",
+    "options": [
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.1acbeaf889dc",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Select the candidate holding valid prop approval authority under the stated delegation rule.",
+    "options": [
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.3c28a6046f83",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Select the candidate holding valid prop approval authority under the stated delegation rule.",
+    "options": [
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      }
+    ],
+    "row_count": 3
+  },
+  {
+    "id": "semif.bench.6c7ed6395ea8",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Select the candidate holding valid prop approval authority under the stated delegation rule.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.7fd71869cca3",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Select the candidate ready according to the controlling signed checklist.",
+    "options": [
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.23b3bb35c8ee",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Select the candidate ready according to the controlling signed checklist.",
+    "options": [
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.9cb04cdf4fc1",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Select the candidate ready according to the controlling signed checklist.",
+    "options": [
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.3f164260bab1",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Select the candidate ready according to the controlling signed checklist.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.bf95e37b95b8",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Select the candidate whose claimed authority comes only through a prohibited second delegation.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.3986128a84c5",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Select the candidate with currently valid streaming permission; a withdrawal cancels an earlier grant.",
+    "options": [
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.e87e00602751",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Select the candidate with currently valid streaming permission; a withdrawal cancels an earlier grant.",
+    "options": [
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.b7f027ff04e7",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Select the candidate with currently valid streaming permission; a withdrawal cancels an earlier grant.",
+    "options": [
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.b3efd221102d",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Select the candidate with currently valid streaming permission; a withdrawal cancels an earlier grant.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.91712bfdb5b0",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Select the complete incident package.",
+    "options": [
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.28484a9a6c45",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Select the complete incident package.",
+    "options": [
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.13054066abdb",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Select the complete incident package.",
+    "options": [
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      }
+    ],
+    "row_count": 3
+  },
+  {
+    "id": "semif.bench.20a1982f69d8",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Select the package containing the timeline but missing the remedy report.",
+    "options": [
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.09b3867d8bbc",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Select the submission disqualified specifically by the signature exclusion despite the outage exception.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.17e8329f6a62",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Select the submission qualifying under the stated exception and exclusion.",
+    "options": [
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.05823aebd0f9",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Select the submission qualifying under the stated exception and exclusion.",
+    "options": [
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.e3b228906f03",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Select the submission qualifying under the stated exception and exclusion.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.b60d6398d6d7",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Select the submission qualifying under the stated exception and exclusion.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.e9f330b47a5f",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Sell copies only with the architect's sales permission. May copies be sold?",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.0cc61fdd0b37",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Sell copies only with the architect's sales permission. May copies be sold?",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.418517b4c90d",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Sell copies only with the architect's sales permission. May copies be sold?",
+    "options": [
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.4ee56528a76c",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Sell copies only with the architect's sales permission. May copies be sold?",
+    "options": [
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.74ee7085f8fa",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "The first-aid badge requires only first-aid training. May this guide receive it?",
+    "options": [
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.b0a6880e98bd",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "The first-aid badge requires only first-aid training. May this guide receive it?",
+    "options": [
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      }
+    ],
+    "row_count": 3
+  },
+  {
+    "id": "semif.bench.cfa67f849ec3",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "The stage manager may approve props but may not delegate that authority. Only authorized approvers may approve. May the assistant approve a prop?",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.8d7f6b317659",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "The stage manager may approve props but may not delegate that authority. Only authorized approvers may approve. May the assistant approve a prop?",
+    "options": [
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.a83d168d4a57",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "The stage manager may approve props but may not delegate that authority. Only authorized approvers may approve. May the assistant approve a prop?",
+    "options": [
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      }
+    ],
+    "row_count": 3
+  },
+  {
+    "id": "semif.bench.dde813cbfe08",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "The stage manager may delegate prop approval to an assistant, and doing so grants the assistant approval authority. May this assistant approve?",
+    "options": [
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.b23635aa4de0",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Under the alternative policy, either suitable available venue may be booked without priority. May the school be booked?",
+    "options": [
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.085caf95909a",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Under the alternative priority, choose B whenever B is able; choose A only when B is unable and A is able.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.dfae9a6a7bc7",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Under the alternative protocol, chat controls conflicts. Select the candidate ready according to chat.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.5847feccae64",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Under the alternative rule, a pass requires working in the valley; residence alone is insufficient. May it be issued?",
+    "options": [
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.05c96e3aa205",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Under the alternative rule, the badge requires both first-aid and mountain-navigation training. May this guide receive it?",
+    "options": [
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.48815d40d2bb",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Use the homeowner's latest permission decision; a withdrawal cancels the earlier grant. May the surveyor enter the attic?",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.c7bd7d870740",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Use the homeowner's latest permission decision; a withdrawal cancels the earlier grant. May the surveyor enter the attic?",
+    "options": [
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      }
+    ],
+    "row_count": 2
+  },
+  {
+    "id": "semif.bench.f7a10392618b",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Use the homeowner's latest permission decision; a withdrawal cancels the earlier grant. May the surveyor enter the attic?",
+    "options": [
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.3081f785f31b",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: A resident's pass requires living in the valley and has no workplace restriction. May it be issued?",
+    "options": [
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.1fd15dfea7fb",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: A wristband permits entry exactly to the areas it covers. May the visitor enter the sculpture garden?",
+    "options": [
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.b22924c8fb85",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Approve final handover exactly when both the translated manual and glossary have been supplied. May final handover be approved?",
+    "options": [
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.c11e4eaafdd3",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Assess the claim: Mo has authority to approve exhibit labels.",
+    "options": [
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.a13a755a7870",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Assess the claim: permission to scan the notebook is currently valid.",
+    "options": [
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.19cdc8e81f97",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Assess the claim: terminal Maple is online.",
+    "options": [
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.eb6d3c5bbd95",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Assess the claim: the agreed handover is complete.",
+    "options": [
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.bcccb2b73cd2",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Assess the claim: the corrected date is in July.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.4d03ef032e4b",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Assess the claim: the egg discovery was fictional.",
+    "options": [
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.f2c5f236234e",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Assess the claim: the guest endorses the listing's towel statement.",
+    "options": [
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.7a8f4fe1ad82",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Assess the claim: the parcel has been weighed.",
+    "options": [
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.c79a3bc4a924",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Assess the claim: the replacement lenses have been fitted.",
+    "options": [
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.428f3830dba3",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Assess the claim: the routing rule assigns this repair to the outside workshop.",
+    "options": [
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.12c4aed503c4",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Assess the claim: this lamp qualifies for return under the stated policy.",
+    "options": [
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.a0ebb90e0dec",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Assess the claim: under the supplied protocol, the crate is currently in storage.",
+    "options": [
+      {
+        "id": "contradicted",
+        "description": "The evidence establishes the opposite"
+      },
+      {
+        "id": "insufficient",
+        "description": "The evidence does not establish either"
+      },
+      {
+        "id": "supported",
+        "description": "The evidence establishes the claim"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.c14d7ad1747d",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Book the school only as a fallback when the town hall is unavailable or unsuitable; otherwise book the town hall. May the school be booked under this policy?",
+    "options": [
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.67f217639e1f",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Change an account field only when the owner authorizes changing that field. May the recovery email be changed?",
+    "options": [
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.c2f7779bf9a1",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Choose A whenever A is able; choose B only when A is unable and B is able.",
+    "options": [
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.c6608e0f95cc",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Choose the candidate asking to repair the existing window.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.5a8b66eab2d7",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Choose the candidate authorizing engraving.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.dcc8493c0288",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Choose the candidate reporting an awarded grant.",
+    "options": [
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.118c70c172cb",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Choose the candidate reporting an observed test result.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.1311d785a0df",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Choose the candidate reporting completed delivery.",
+    "options": [
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.f02d6a16abb8",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Choose the candidate supporting a paywall.",
+    "options": [
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.f6073e9a2cab",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Mass production is allowed only after mass-production approval. May it begin?",
+    "options": [
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.1b8431289291",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Normally reject opened paint. Accept it for a manufacturing defect, except that added solvent always makes it ineligible. May this return be accepted?",
+    "options": [
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.b77791a32dc7",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Release equipment exactly when the deposit is recorded paid; in conflicts, the signed ledger overrides the desk clerk. May it be released?",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.2ad8c4573ab2",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Select the candidate holding valid prop approval authority under the stated delegation rule.",
+    "options": [
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.e5aa6506cf7f",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Select the candidate ready according to the controlling signed checklist.",
+    "options": [
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.51ee926a4cef",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Select the candidate with currently valid streaming permission; a withdrawal cancels an earlier grant.",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.3a81e89a18ae",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Select the complete incident package.",
+    "options": [
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.3adb8b938c83",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Select the submission qualifying under the stated exception and exclusion.",
+    "options": [
+      {
+        "id": "B",
+        "description": "Candidate B"
+      },
+      {
+        "id": "A",
+        "description": "Candidate A"
+      },
+      {
+        "id": "insufficient",
+        "description": "Neither candidate supplies the requested evidence"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.b15e09357dd2",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Sell copies only with the architect's sales permission. May copies be sold?",
+    "options": [
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.1e295357ee72",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: The first-aid badge requires only first-aid training. May this guide receive it?",
+    "options": [
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.64e1dd6f6e95",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: The stage manager may approve props but may not delegate that authority. Only authorized approvers may approve. May the assistant approve a prop?",
+    "options": [
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      },
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      }
+    ],
+    "row_count": 1
+  },
+  {
+    "id": "semif.bench.cd146afc6c7d",
+    "version": 1,
+    "owner": "perf-bench",
+    "question": "Using only the supplied evidence, decide the following criterion: Use the homeowner's latest permission decision; a withdrawal cancels the earlier grant. May the surveyor enter the attic?",
+    "options": [
+      {
+        "id": "permitted",
+        "description": "The stated rule permits the action"
+      },
+      {
+        "id": "prohibited",
+        "description": "The stated rule prohibits the action"
+      },
+      {
+        "id": "insufficient",
+        "description": "The supplied information does not settle whether the rule permits the action"
+      }
+    ],
+    "row_count": 1
   }
 ]
