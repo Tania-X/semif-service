@@ -2,6 +2,9 @@
 
 把「语义判定」暴露成一个**窄而可审计**的 HTTP 服务：给一份 state 和若干冻结的判定点，返回每个选项的概率分布。
 
+> **本仓库是 [semif-gate](https://github.com/Tania-X/semif-gate) 系统的推理后端。**
+> 整体架构、中心论点（选项顺序为什么进缓存键）和全部实测报告都在 gate 那边；这里只讲服务本身。
+
 这是 [SemIf](https://github.com/TheoLeeCJ/SemIf) 的直接 logits 读出法的**服务化封装**，
 用作 [semif-gate](https://github.com/Tania-X/semif-gate)（Java 决策网关）的推理后端。
 
@@ -172,15 +175,11 @@ python server.py \
 **选项顺序是语义的一部分，不是显示细节。**
 
 SemIf 的答案字母按选项**下标**分配（`LETTERS[i]`），所以顺序一变，
-字母↔选项映射就变、prompt 文本就变、模型行为就变。实测证据：
+字母↔选项映射就变、prompt 文本就变、模型行为就变。
 
-| 变化 | 对判定翻转率的影响 |
-|---|---:|
-| 调换选项顺序 | **30.6%** |
-| 换 GPU 架构（3090 → 4090） | 0.7% |
-| 换执行模式（全量前向 → 前缀复用） | 0% |
-
-**顺序对判定的影响比换一张显卡大 40 倍。**
+实测：调换顺序翻转 **30.6%** 的判定，而换一张显卡只翻转 **0.7%**。
+完整论证、实验方法与另两个对照项见 gate 仓库的
+[`docs/finding-option-order-is-semantic.md`](https://github.com/Tania-X/semif-gate/blob/main/docs/finding-option-order-is-semantic.md)。
 
 若省略 `option_order`，服务使用注册表冻结的顺序——此时**只有该顺序恰好匹配的评据行**
 才能通过哈希校验。要完整复现 SemIf 的评测集，必须逐行提供 `option_order`
